@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Yellowtail&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Yellowtail&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+header {
+    background-color: #283127;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+}
+
+h1 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-weight: 300;
+}
+
+header nav {
+    color: white;
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-weight: 300; 
+    padding: 0 1rem;
+    flex-basis: 100%;
+}
+
+.menu-toggles {
+    padding-right: 1rem;
+}
+
+#open-menu,
+#close-menu {
+    cursor: pointer;
+}
+
+#close-menu {
+    display: none;
+}
+
+#main-menu {
+    height: 0;
+    overflow: hidden;
+}
+
+#main-menu.open {
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: block;
+}
+
+header nav ul a {
+    color: rgb(255, 255, 255);
+    font-family: "Quattrocento", serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+}
+.hero {
+    background-image: url("hero.jpg");
+    height: 100vh;
+    margin: 0;
+}
+
+
+.card2 {
+    h2{
+        font-family: "Newsreader";
+    }
+    margin: 0px;
+}
+
+@media screen and (width >= 800px) {
+    header nav {
+        background: transparent;
+        max-width: 589px;
+    }
+
+    #main-menu {
+        height: auto;
+        max-width: auto; 
+    }
+
+    .menu-toggles {
+        display: none; 
+    }
+
+    header nav ul {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    header nav ul li {
+        display: flex; 
+        align-items: center;
+    }
+
+    header nav ul a {
+        padding: 25px 15px; 
+        align-items: center;
+    }
+}
+body {
+    background-color: #859084;
+}
+.hero {
+    h2 {
+        font-family: "Newsreader";
+        font-size: 100px;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+    hr {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    h3 {
+        font-family: "Quattrocento", sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 45px;
+        line-height: 35px;
+    }
+    p {
+        font-family: "Quattrocento", serif;
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        line-height: 35px;   
+    }
+    .my-button {
+        background-color: #C4B1B2; /* Green background */
+        opacity: 60%;
+        font-family: "Quattrocento";
+        color: white; /* White text */
+        opacity: 100%
+        justify-content: center;
+        border: none; /* Remove border */
+        border-radius: 10px; /* Rounded corners */
+        padding: 13px 36px; /* Padding */
+        font-size: 16px; /* Font size */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s; /* Smooth transition */
+        transform: translateX(600px);
+    }
+    .my-button:hover {
+        background-color: #495947; /* Darker green on hover */
+    }
+}
+.card1 {
+   display: flex;
+   align-items: center;
+   gap: 25px;
+   margin: 50px;
+   padding: 25px;
+    .h2-card1 {
+        font-family: "Newsreader";
+        font-size: 72px;
+        color: #283127;
+        text-align: left;
+        margin-bottom: 35px;
+    }
+    p {
+        font-family: "Quattrocento", sans-serif;
+        font-size: 30px;
+        color: #6D7A6C;
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 90px;
+    }
+    img {
+       transform: translateX(-50px);
+    }
+    background-color: #F4F3EE;
+    .my-button {
+        background-color: #859084; /* Green background */
+        font-family: "Quattrocento";
+        color: white; /* White text */
+        border: none; /* Remove border */
+        border-radius: 10px; /* Rounded corners */
+        padding: 13px 36px; /* Padding */
+        font-size: 16px; /* Font size */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    
+    .my-button:hover {
+        background-color: #495947; /* Darker green on hover */
+    }
+        }
+.card2 {
+    gap: 25px;
+    margin: 10px;
+    padding: 25px;
+    background-color: #4D4930;
+    .h2-card2 {
+        font-family: "Newsreader";
+        color: #F4F3EE;
+        font-size: 65px;
+        align-text: left;  
+    }
+    .line-with-ball {
+        position: relative;                /* Positioning for the ball */
+        margin-right: 100px;               /* Adjust right margin */
+        margin-top: 20px;
+        margin-bottom: -25px;                 /* Optional: space above the line */
+        height: 2px;                      /* Height of the line */
+        background-color: #F4F3EE;
+        margin-left: -90px;
+        z-index: 1;
+    }
+    
+    .line-with-ball::after {
+        content: '';                       /* Empty content for the ball */
+        position: absolute;                /* Absolute positioning */
+        right: -10px;                     /* Adjust to overlap the line on the right */
+        top: -5px;                        /* Position the ball above the line */
+        width: 10px;                      /* Width of the ball */
+        height: 10px;                     /* Height of the ball */
+        background-color: #F4F3EE;           /* Same color as the line */
+        border-radius: 50%;               /* Make it round */
+    }
+    p {
+        font-family: "Quattrocento";
+        color: #F4F3EE;
+        font-size: 24px;
+        align-text: left;
+        background-color: #859084;
+        padding: 20px;
+        padding-left: 70px;
+        transform: translateX(50px)
+
+    }
+    transform: translateX(50px)
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  .sale {
+     background: #4D4930;
+  background: linear-gradient(180deg, #4D4930 0%, #4D4930 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%); 
+    padding: 25px;
+    line-height: 0;
+    text-align: center;
+    color: #F4F3EE;
+  }
+  
+  .sale-cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .sale > p {
+    margin: 50px 0;
+    color: #F4F3EE;
+    
+  }
+  .sale-card {
+    position: relative;
+  }
+  .sale-card p {
+    font-family: "Newsreader";
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background-color: #3b38257a;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 25px;
+    color: #F4F3EE;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+  }
+  .sale-card:hover p {
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 30px;
+  }
+.footer {
+    .h2-footer {
+        font-family: "Saira Extra Condensed", sans-serif;
+        font-weight: 100;
+        color: #F4F3EE;
+        padding-top: 20px;
+        padding-left: 70px;
+        font-size: 45px;
+    }
+    p {
+        color: #F4F3EE;
+        text-align: right;
+        font-family: "Quattrocento", serif;
+        font-weight: 30;
+        font-size: 32px;
+        padding-left: 70px;
+    }
+    h3 {
+        font-family: "Quattrocento", serif;
+        font-weight: 30;
+        font-size: 32px;
+        padding-left: 70px;
+        color: #F4F3EE;
+        transform: translateY(-80px)
+    }
+    ul {
+        font-family: "Saira ExtraCondensed", sans-serif;
+        font-weight: 20;
+        font-size: 25px;
+        line-height: 40px;
+        color: #F4F3EE;
+        text-align: left;
+        padding-left: 70px;
+        list-style-type: none; /* Removes bullets */
+        transform: translateY(-100px)
+    
+    }
+    background-image: url(footer\(img\).jpg); 
+    max-width: 100%;
+    background-size: cover; /* Ensures the image covers the entire footer */
+    background-position: center; /* Centers the image */
+    max-width: 100%;
+    height: 500px; /* Adjust height as needed */
+}
